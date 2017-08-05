@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html dir="ltr">
+  <!-- Saved from https://github.com/basrimedia -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Beautify, CSS Uglify</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link href="https://cdn.rawgit.com/basrimedia/media/9ec5b3c0/convert.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!--
+
+/* comment */
+a{
+b{c:d}
+/* comment */
+e{f:g;h:i}
+j,k,l,m{n:o;p:q}
+r{
+/* comment */
+s{t:u}
+}
+v{}
+w>x{y:z}
+a+b{c:d}
+e~f{g:h}
+i{j:k:"l,m,n{o:p}"}
+q{r:s}
+}
+/* comment */
+b {c:d}
+/* comment */
+
+-->
+
+    <fieldset>
+      <legend>Settings</legend>
+      <p><label>Mode: <select id="mode"><option value="0">Uglify</option><option value="1" selected>Beautify</option></select></label></p>
+      <fieldset>
+        <legend>Beautify</legend>
+        <label><select id="i-w"><option value="  ">Indent with 2 Spaces</option><option value="    ">Indent with 4 Spaces</option><option value="\t">Indent with a Tab</option></select></label>
+        <br>
+        <br>
+        <label><input type="checkbox" id="i-m"> Inline Mode</label>
+      </fieldset>
+      <fieldset>
+        <legend>Uglify</legend>
+        <label><input type="checkbox" id="r-c" checked> Remove Comments</label>
+        <br>
+        <label><input type="checkbox" id="a-b"> Add Line Break</label>
+      </fieldset>
+    </fieldset>
+    <main>
+      <div>
+        <fieldset>
+          <legend>Input</legend>
+          <textarea id="input"></textarea>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Output</legend>
+          <textarea id="output"></textarea>
+        </fieldset>
+      </div>
+    </main>
+    <p>&copy; 2017 <a href="http://www.goomsite.net">Basri Matindas</a></p>
+    <script src="https://cdn.rawgit.com/basrimedia/media/9ec5b3c0/convert.js"></script>
+  </body>
+</html>
